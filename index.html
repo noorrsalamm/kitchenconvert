@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kitchen Converter</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+<h1>🍳 محول المقادير</h1>
+<p>تحويل ذكي للمطبخ (غرام / لتر / كوب)</p>
+
+<select id="ingredient">
+<option value="flour">طحين</option>
+<option value="sugar">سكر</option>
+<option value="rice">رز</option>
+<option value="milk">حليب</option>
+<option value="oil">زيت</option>
+</select>
+
+<input type="number" id="amount" placeholder="ادخل الكمية">
+
+<select id="unit">
+<option value="g">غرام</option>
+<option value="kg">كيلوغرام</option>
+<option value="ml">ملليلتر</option>
+<option value="l">لتر</option>
+<option value="cup">كوب</option>
+</select>
+
+<button onclick="convert()">تحويل</button>
+
+<h2 id="result"></h2>
+
+<p class="note">* القيم تقريبية وتختلف حسب المادة</p>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
